@@ -1,15 +1,30 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="./script.js" defer></script>
-    <title>Morse Code</title>
-  </head>
-  <body>
-    <label for="english">English</label>
-    <input type="text" id="english" name="english" />
-    <button id="submit">Translate</button>
-    <p id="morseCode"></p>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400&family=Roboto+Mono:ital@1&display=swap"
+			rel="stylesheet" />
+		<script type="module" src="./script.js" defer></script>
+		<title>Morse Code</title>
+	</head>
+	<body>
+		<h1 class="header">Morse Translator</h1>
+		<h4 class="subheader">Morse code words are spaced using '/'</h4>
+		<main class="app">
+			<label for="input">Input:</label>
+			<textarea type="text" id="input" name="input"></textarea>
+			<div class="app__buttons">
+				<button class="btn" id="btnAuto">Auto</button>
+				<button class="btn" id="btnMorse">Morse</button>
+				<button class="btn" id="btnEnglish">English</button>
+			</div>
+		</main>
+		<h2>Output:</h2>
+		<p id="output"></p>
+	</body>
 </html>
